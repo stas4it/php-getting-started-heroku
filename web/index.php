@@ -13,6 +13,8 @@ Hello
   <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p>text: <?php echo htmlspecialchars($_GET['text']); ?></p>
+     <p>text: <?php echo htmlspecialchars($_GET['my-textarea']); ?></p>
+     <p>text: <?php echo htmlspecialchars($_GET['my-color']); ?></p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
      </div>
   <?php } ?>
@@ -30,6 +32,8 @@ Hello
       <input id="my-radio-no" name="radio" type="radio" required value="No"></p>
     <br>
      <input type="text" name="text"><br>
+    <textarea id="my-textarea" name="my-textarea" style="resize:none" placeholder="Введите многострочный текст"></textarea><br>
+    <input id="my-color" name="my-color" type="color"><br>
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
     
