@@ -18,6 +18,7 @@ Hello
   <?php if (!isset($_GET['submitted'])) { ?>
   
   <h1>Play with the HTML form</h1>
+  <div style="border: 2px solid green;">
   <form action="/index.php">
     <input type="hidden" name="submitted" value="yes">
     <p>
@@ -26,12 +27,12 @@ Hello
       <label for="my-radio-no">radio No: </label>
       <input id="my-radio-no" name="radio" type="radio" required value="No"></p>
     <br>
-     <input type="text">
+     <input type="text" name="text"><br>
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
     
   </form>
-
+  </div>
   <?php } ?>
 
 </body>
