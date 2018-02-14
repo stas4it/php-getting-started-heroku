@@ -9,10 +9,12 @@
 <body>
 Hello
   <?php if (isset($_GET['submitted'])) { ?>
-    <h1>The server had accepted:</h1>
+   <div style="border: 3px solid red; padding: 10px;"> 
+  <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p>text: <?php echo htmlspecialchars($_GET['text']); ?></p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
+     </div>
   <?php } ?>
 
   <?php if (!isset($_GET['submitted'])) { ?>
