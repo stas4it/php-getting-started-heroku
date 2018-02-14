@@ -10,7 +10,7 @@
   
 Hello
   <?php if (isset($_GET['submitted'])) { ?>
-  <div style="border: 3px solid; padding: 10px; border-color: <?php echo htmlspecialchars($_GET['my-color']); ?>; border-radius: <?php echo htmlspecialchars($_GET['my-range']); ?>">  
+  <div style="border: 3px solid; padding: 10px; border-color: <?php echo htmlspecialchars($_GET['my-color']); ?>; border-radius: <?php echo htmlspecialchars($_GET['my-range']); ?>;">  
   <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p>text: <?php echo htmlspecialchars($_GET['text']); ?></p>
