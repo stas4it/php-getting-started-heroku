@@ -7,14 +7,15 @@
   <title>Form test</title>
 </head>
 <body>
+  <div style="border: 3px solid red; padding: 10px;">
 Hello
   <?php if (isset($_GET['submitted'])) { ?>
-   <div style="border: 3px solid red; padding: 10px;"> 
+    
   <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p>text: <?php echo htmlspecialchars($_GET['text']); ?></p>
-     <p>text: <?php echo htmlspecialchars($_GET['my-textarea']); ?></p>
-     <p>text: <?php echo htmlspecialchars($_GET['my-color']); ?></p>
+     <p>Многострочный текст: <?php echo htmlspecialchars($_GET['my-textarea']); ?></p>
+     <p>Цвет: <?php echo htmlspecialchars($_GET['my-color']); ?></p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
      </div>
   <?php } ?>
@@ -30,10 +31,11 @@ Hello
       <input id="my-radio-yes" name="radio" type="radio" required value="Yes">
       <label for="my-radio-no">radio No: </label>
       <input id="my-radio-no" name="radio" type="radio" required value="No"></p>
-    <br>
-     <input type="text" name="text"><br>
-    <textarea id="my-textarea" name="my-textarea" style="resize:none" placeholder="Введите многострочный текст"></textarea><br>
+    <br><br>
+     <input type="text" name="text"><br><br>
+    <textarea id="my-textarea" name="my-textarea" style="resize:none" placeholder="Введите многострочный текст"></textarea><br><br>
     <input id="my-color" name="my-color" type="color"><br>
+    <br>
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
     
